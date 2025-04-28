@@ -15,11 +15,15 @@ function telaDefault() {                                //TELA PADRAO
 function openMenu() {
     $("#menu-nav").css("width","550px");
     $("#close-menu").fadeIn();
+    $("#box-titulo").css("filter","blur(3px)");
+    $("#content-display").css("filter","blur(3px)");
 }
 
 function closeMenu() {
     $("#menu-nav").css("width","0");
     $("#close-menu").fadeOut();
+    $("#box-titulo").css("filter","blur(0)");
+    $("#content-display").css("filter","blur(0)");
 }
 
 // PAGES CALL

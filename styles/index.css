@@ -20,7 +20,7 @@ body {
     background-color: var(--background);
     color: var(--white);
     overflow: hidden;
-    scale: 1.1;
+    scale: 0.9;
 }
 
 a {
