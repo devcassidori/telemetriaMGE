@@ -1,0 +1,188 @@
+<script>
+    displayMain();
+</script>
+<link rel="stylesheet" href="../styles/default.css">
+<div id="display-painel" class="center frame">
+    <div id="display" class="frame">
+        <header class="center frame">
+            <figure>
+                <a title="MGE Broadcast" href="https://www.mgebr.com.br/" target="_blank" rel="noopener noreferrer">
+                    <img class="logo" src="../imgs/logo-mge.svg" alt="logo-mge">
+                </a>
+            </figure>
+            <div class="info-header">
+                <div class="center">
+                    <h4>
+                        MODEL:
+                        <span id="model" class="measure">#######</span>
+                    </h4>
+                </div>
+                <div class="center">
+                    <h4>
+                        MODE:
+                        <span id="mode" class="measure">#######</span>
+                    </h4>
+                </div>
+            </div>
+            <div class="info-header">
+                <div class="center">
+                    <h4>
+                        SERIE:
+                        <span id="serie" class="measure">#######</span>
+                    </h4>
+                </div>
+                <div class="center">
+                    <h4>
+                        DATE:
+                        <span id="date" class="measure">
+                            <span id="day">##</span>/<span id="month">##</span>/<span id="year">####</span>
+                        </span>
+                    </h4>
+                </div>
+            </div>
+            <figure>
+                <img class="logo" src="../imgs/logo-sustainability.svg" alt="">
+            </figure>
+        </header>
+        <main class="frame">
+            <div id="titulo-display" class="center">
+                <a onclick="openMenu()" title="Menu" id="menu-icon">
+                    <i class="bi bi-list"></i>
+                </a>
+                <div>
+                    <a title="Close Menu" href="#" onclick="closeMenu()" id="close-menu">
+                        <h1>&times;</h1>
+                    </a>
+                </div>
+                <div class="overlay-menu" id="menu-nav">
+                    <div>
+                        <!----------------------- MENU HERE ------------------------->
+                        <div align="center" id="menu-content">
+                            <a onclick=" displayMain()" href="#">
+                                <h4>MAIN MEASUREMENTS</h4>
+                            </a>
+                            <a onclick="displayUsers()" href="#">
+                                <h4>USERS</h4>
+                            </a>
+                            <a href="#">
+                                <h4>ABC</h4>
+                            </a>
+                            <a href="#">
+                                <h4>ABC</h4>
+                            </a>
+                            <a href="#">
+                                <h4>ABC</h4>
+                            </a>
+                            <a href="#">
+                                <h4>ABC</h4>
+                            </a>
+                            <a href="#">
+                                <h4>ABC</h4>
+                            </a>
+                            <a href="#">
+                                <h4>ABC</h4>
+                            </a>
+                            <a href="#">
+                                <h4>ABC</h4>
+                            </a>
+                            <a href="#">
+                                <h4>ABC</h4>
+                            </a>
+                            <a href="#">
+                                <h4>ABC</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="box-titulo">
+                        <div>
+                            <h3 id="titulo"></h3> <!-------------- Titulo -------------->
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <a title="Exit" onclick="telaLogout()" id="logout-icon">
+                    <i class="bi bi-box-arrow-right"></i>
+                </a>
+            </div>
+            <div id="content-display">
+                <!-- 
+                        Display Pages Here
+                    -->
+            </div>
+        </main>
+    </div>
+    <div id="painel" class="frame">
+        <div id="faults-content" class="frame painel-slot">
+            <div>
+                <h3 align="center">FAULTS</h3>
+            </div>
+            <div class="center slot-content">
+                <div align="center">
+                    <h4>PLL</h4>
+                    <figure><img src="../imgs/pll.svg" alt="PLL"></figure>
+                </div>
+                <div align="center">
+                    <h4>SWR</h4>
+                    <figure><img src="../imgs/swr.svg" alt="SWR"></figure>
+                </div>
+                <div align="center">
+                    <h4>TEMP</h4>
+                    <figure><img src="../imgs/temp.svg" alt="TEMP"></figure>
+                </div>
+                <div align="center">
+                    <h4>PA</h4>
+                    <figure><img src="../imgs/pa.svg" alt="PA"></figure>
+                </div>
+                <div align="center">
+                    <h4>AC</h4>
+                    <figure><img src="../imgs/ac.svg" alt="AC"></figure>
+                </div>
+                <div align="center">
+                    <h4>MUTE</h4>
+                    <figure><img src="../imgs/mute.svg" alt="MUTE"></figure>
+                </div>
+            </div>
+        </div>
+        <div id="power-carrier" class="center">
+            <div id="power-content" class="frame painel-slot">
+                <div align="center">
+                    <h3>POWER</h3>
+                </div>
+                <div>
+                    <div id="power-h4s" class="center slot-content">
+                        <h4>LOW</h4>
+                        <h4>MID</h4>
+                        <h4>HIGH</h4>
+                    </div>
+                    <div id="power-icons" class="center slot-content">
+                        <figure><img src="../imgs/low.svg" alt="low"></figure>
+                        <figure><img src="../imgs/mid.svg" alt="mid"></figure>
+                        <figure><img src="../imgs/high.svg" alt="high"></figure>
+                    </div>
+                </div>
+                <div class="center">
+                    <button class="btn-blue btn-painel"></button>
+                </div>
+            </div>
+            <div id="carrier-content" class="frame painel-slot">
+                <div align="center">
+                    <h3>CARRIER</h3>
+                </div>
+                <div class="center slot-content">
+                    <div align="center">
+                        <h4>OFF</h4>
+                        <figure><img src="../imgs/pw.svg" alt="power-icon"></figure>
+                        <button class="btn-blue btn-painel"></button>
+                    </div>
+                    <div align="center">
+                        <h4>ON</h4>
+                        <figure><img src="../imgs/mic.svg" alt="mic-icon"></figure>
+                        <button class="btn-green btn-painel"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

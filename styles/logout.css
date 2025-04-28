@@ -1,0 +1,30 @@
+#frameTextLogout {
+    background-color: var(--backroundTextPos);
+    font-weight: bold;
+    color: var(--textPos);
+    margin-bottom: 10px;
+}
+
+
+#frameLogout {
+    margin-top: 150px;
+    width: 450px;
+    height: 300px;
+}
+
+#logo-mge {
+    height: 80px;
+}
+
+#frameTextLogout {
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.btn-blue {
+    width: 310px;
+    height: 40px;
+    font-size: 14.5px;
+
+}

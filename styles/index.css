@@ -1,0 +1,100 @@
+/*_________________ COLORS _________________*/
+
+.darkColors {
+    --white: #ffffff;
+    --lightgray: #858585;
+    --background: #353535;
+    --azulMGE: #007AFF;
+    --frame: #454545;
+    --shadow: #00000070;
+    --backroundTextPos: #D5FFCF;
+    --textPos: #1B8800;
+    --verdebtn: #05D405;
+    scrollbar-color: var(--background) var(--shadow);
+}
+
+/*_________________ GENERAL _________________*/
+
+body {
+    font-family: Arial;
+    background-color: var(--background);
+    color: var(--white);
+    overflow: hidden;
+    scale: 1.1;
+}
+
+a {
+    cursor: pointer;
+}
+
+input {
+    border-radius: 10px;
+    border-color: var(--frame);
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*_________________ FRAMES STYLE _________________*/
+
+.frame {
+    box-shadow: 0px 4px 4px 0px var(--shadow);
+    border-radius: 10px;
+    background-color: var(--frame);
+}
+
+/*_________________ BUTTONS STYLE _________________*/
+
+button {
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px var(--shadow) inset, 0px 4px 4px 0px var(--shadow);
+    font-weight: bold;
+    color: white;
+    border-color: var(--frame);
+    border-radius: 10px;
+}
+
+.btn-blue {
+    background-color: var(--azulMGE);
+}
+
+.btn-green {
+    background-color: var(--verdebtn);
+}
+
+/*_________________ PAGES TRANSISTIONS _________________*/
+
+#page,
+#content-display {
+    transition: 1.5s;
+}
+
+/* ________________________________________________R E S P O N S I V I D A D E_____________________________________________ */
+
+/* ____________________________________PC___________________________________________ */
+
+@media screen and (min-width: 1024px) {}
+
+/* ____________________________________TABLET-LANDSCAPE_______________________________________ */
+
+@media screen and (max-width: 1023px) and (min-width: 768px) and (orientation:landscape) {}
+
+/* ____________________________________MOBILE-LANDSCAPE_______________________________________ */
+
+@media screen and (max-width: 767px) and (orientation:landscape) {}
+
+/* ____________________________________TABLET_______________________________________ */
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {}
+
+/* ____________________________________MOBILE_______________________________________ */
+
+@media screen and (max-width: 767px) {}

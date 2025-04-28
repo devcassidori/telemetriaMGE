@@ -1,0 +1,22 @@
+#frameLogin {
+    margin-top: 150px;
+    width: 400px;
+    height: 300px;
+}
+
+#logo-mge {
+    height: 80px;
+}
+
+input {
+    width: 252px;
+    height: 34px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.btn-blue {
+    width: 260px;
+    height: 40px;
+    font-size: 15px;
+}

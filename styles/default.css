@@ -1,0 +1,224 @@
+#display-painel {
+    padding: 20px;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 100px auto 0;
+}
+
+#display,
+#painel {
+    background-color: var(--background);
+    padding: 20px;
+    width: 550px;
+    height: 440px;
+}
+
+/*__________________ DISPLAY __________________*/
+
+header {
+    padding: 0 8px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.info-header {
+    margin: 0 9px;
+}
+
+figure {
+    margin: 0;
+}
+
+main {
+    padding: 15px;
+}
+
+.logo {
+    height: 75px;
+}
+
+#box-titulo {
+    margin-left: -140px;
+}
+
+#titulo-display {
+    justify-content: space-between;
+    margin-top: -15px;
+}
+
+#menu-icon {
+    font-size: 25px;
+}
+
+#logout-icon {
+    font-size: 22px;
+}
+
+#menu-icon,
+#logout-icon {
+    transition: 0.3s;
+    color: var(--lightgray);
+}
+
+#menu-icon:hover,
+#menu-icon:focus,
+#logout-icon:hover,
+#logout-icon:focus {
+    scale: 1.2;
+    color: var(--white);
+}
+
+hr {
+    color: var(--white);
+    margin-top: -15px;
+    margin-bottom: 1px;
+}
+
+#content-display {
+    height: 220px;
+    transition: 1.5s;
+}
+
+/* VALUES */
+
+.measure {
+    background-color: var(--lightgray);
+    border-radius: 7px;
+    padding: 1px 7px;
+    box-shadow: inset 0px 4px 4px 0px var(--shadow);
+}
+
+/*__________________ MENU STYLE __________________*/
+
+#menu-nav {
+    margin-top: 255px;
+    margin-left: -15px;
+    width: 0;
+    position: absolute;
+    background-color: var(--shadow);
+    border-radius: 10px;
+    height: 305px;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    transition: all 0.5s;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#menu-nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu-content {
+    margin-top: 40px;
+}
+
+#menu-content a {
+    margin-top: 15px;
+    display: block;
+}
+
+#close-menu {
+    margin-top: -40px;
+    margin-left: -160px;
+    position: fixed;
+    cursor: pointer;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 2000;
+    visibility: hide;
+}
+
+#menu-content a:hover,
+#menu-content a:focus,
+#close-menu:hover,
+#close-menu:focus {
+    color: #aaaaaa;
+}
+
+/*_________________ TABLE STYLE _________________*/
+
+table {
+    margin: -15px auto 0;
+    border: 2px solid var(--lightgray);
+    border-radius: 10px;
+    width: 450px;
+}
+
+table {
+    font-size: 14px;
+    margin-top: 20px;
+    border-spacing: 0;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: var(--background);
+}
+
+td,
+th {
+    padding: 3px 15px;
+}
+
+.col1 {
+    text-align: start;
+}
+
+.col2 {
+    text-align: end;
+}
+
+/*_________________ PAINEL STYLES _________________*/
+
+.painel-slot {
+    padding: 10px;
+    border: solid 3px var(--lightgray);
+}
+
+#painel h3 {
+    margin: 0;
+}
+
+.painel-slot h4 {
+    color: var(--lightgray);
+}
+
+.slot-content {
+    justify-content: space-around;
+}
+
+#faults-content {
+    margin-top: 18px;
+}
+
+#power-carrier {
+    margin: 20px auto 0;
+}
+
+#power-carrier .slot-content {
+    width: 235px;
+}
+
+#power-content {
+    margin-right: 20px;
+}
+
+#power-icons {
+    margin-left: 7px;
+    align-items: end;
+}
+
+#power-h4s {
+    align-items: start;
+}
+
+.btn-painel {
+    margin: 30px auto 10px;
+    width: 50px;
+    height: 40px;
+}
