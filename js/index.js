@@ -13,17 +13,15 @@ function telaDefault() {                                //TELA PADRAO
 
 // MENU FUNCTIONALITY
 function openMenu() {
-    $("#menu-nav").css("width","550px");
+    $("#menu-nav").css("width", "550px");
     $("#close-menu").fadeIn();
-    $("#box-titulo").css("filter","blur(3px)");
-    $("#content-display").css("filter","blur(3px)");
+    $(".blur").css("filter", "blur(2px)");
 }
 
 function closeMenu() {
-    $("#menu-nav").css("width","0");
+    $("#menu-nav").css("width", "0");
     $("#close-menu").fadeOut();
-    $("#box-titulo").css("filter","blur(0)");
-    $("#content-display").css("filter","blur(0)");
+    $(".blur").css("filter", "blur(0)");
 }
 
 // PAGES CALL
@@ -37,4 +35,12 @@ function displayUsers() {
     $("#content-display").load("pages/users.html");
     $("#titulo").html("USERS SETTINGS");
     closeMenu();
+}
+
+function openEdit(){
+    $("#edit-modal").fadeIn();
+}
+
+function closeEdit(){
+    $("#edit-modal").fadeOut();
 }

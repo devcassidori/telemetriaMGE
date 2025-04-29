@@ -2,34 +2,71 @@
     <link rel="stylesheet" href="../styles/users.css">
 </head>
 <div>
-    <table>
-        <tr>
-            <td class="col1">ADM</td>
-            <td><em>ADM</em></td>
-            <td class="col2">
-                <a href="#"><i class="bi bi-pencil-square"></i></a>
-            </td>
-        </tr>
-        <tr>
-            <td class="col1">GUEST</td>
-            <td><em>GUEST</em></td>
-            <td class="col2">
-                <a href="#"><i class="bi bi-pencil-square"></i></a>    
-            </td>
-        </tr>
-        <tr>
-            <td class="col1">GUEST</td>
-            <td><em>GUEST</em></td>
-            <td class="col2">
-                <a href="#"><i class="bi bi-pencil-square"></i></a>
-            </td>
-        </tr>
-        <tr>
-            <td class="col1">GUEST</td>
-            <td><em>GUEST</em></td>
-            <td class="col2">
-                <a href="#"><i class="bi bi-pencil-square"></i></a>
-            </td>
-        </tr>
-    </table>
+    <tbody>
+        <table>
+            <tr>
+                <th>USERS</th>
+                <th>PROFILES</th>
+            </tr>
+            <tr>
+                <td class="col1"><i class="bi bi-person-circle adm-user"></i> ADM</td>
+                <td><em>ADM</em></td>
+                <td class="col2">
+                    <a title="Edit" href="#"><i class="bi bi-pencil-square"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1"><i class="bi bi-person-circle"></i> GUEST</td>
+                <td><em>GUEST-1</em></td>
+                <td class="col2">
+                    <a title="Edit" href="#"><i class="bi bi-pencil-square"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1"><i class="bi bi-person-circle"></i> GUEST</td>
+                <td><em>GUEST-2</em></td>
+                <td class="col2">
+                    <a title="Edit" href="#"><i class="bi bi-pencil-square"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1"><i class="bi bi-person-circle"></i> GUEST</td>
+                <td><em>GUEST-3</em></td>
+                <td class="col2">
+                    <a onclick="openEdit()" title="Edit" href="#"><i class="bi bi-pencil-square"></i></a>
+                </td>
+            </tr>
+        </table>
+    </tbody>
+    <!-- Edit Modal -->
+    <div id="edit-modal" class="modal">
+        <div class="edit-content">
+            <div class="center space-bt">
+                <a id="close-edit" onclick="closeEdit()" href="#">&times;</a>
+                <i class="bi bi-person-fill-gear"></i>
+                    <div>
+                        <h5>PROFILE:</h5>
+                        <select disabled>
+                            <option value="ADM">ADM</option>
+                            <option value="GUEST" selected><b>GUEST</b></option>
+                        </select>
+                    </div>
+            </div>
+            <div>
+                <div class="center space-ar">
+                    <label for="user">USERNAME:</label>
+                    <input name="user" type="text">
+                    <label for="cpass">CURRENT PASSWORD:</label>
+                    <input name="cpass" type="password">
+                </div>
+                <div class="center space-ar">
+                    <label for="npass">NEW PASSWORD:</label>
+                    <input name="npass" type="password">
+                    <label for="confpass">CONFIRM PASSWORD:</label>
+                    <input name="confpass" type="password">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
 </div>

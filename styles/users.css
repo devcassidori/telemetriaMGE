@@ -1,6 +1,95 @@
-em{
-    font-weight: normal;
-    font-style: italic;
+em {
+    font-weight: lighter;
     color: var(--lightgray);
-    margin-left: 65px;
+}
+
+.bi-pencil-square {
+    /* --- Edit Icon --- */
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.bi-pencil-square:hover {
+    color: var(--lightgray);
+}
+
+.bi-person-circle {
+    /* --- User Icon --- */
+    border: solid 2.5px var(--lightgray);
+    border-radius: 100%;
+}
+
+.adm-user {
+    border-color: var(--azulMGE);
+}
+
+th {
+    text-align: start;
+}
+
+/* ----------------------- EDIT MODAL ------------------------- */
+
+.modal {  /* --- BACKGROUND --- */
+    display: none;
+    position: fixed;
+    z-index: 20000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--shadow);
+}
+
+.edit-content {
+    color: black;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 15px;
+    padding-top: 5px;
+    border: 1px solid #888;
+    width: 350px;
+    border-radius: 10px;
+}
+
+#close-edit {
+    color: #aaaaaa;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#close-edit:hover,
+#close-edit:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.space-bt{
+    align-items: start;
+    justify-content: space-between;
+}
+
+.bi-person-fill-gear{
+    font-size: 70px;
+    margin-left: 40px;
+}
+
+.space-bt h5{
+    margin: 0;
+    margin-bottom: -3px;
+}
+
+.space-ar{
+    justify-content: space-around;
+}
+
+.space-ar input{
+    width: 100px;
+}
+
+.space-ar label{
+    font-size: 10px;
 }
