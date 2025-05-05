@@ -1,14 +1,26 @@
-
-function telaLogin() {                                  //TELA LOGIN
+// PAGES CALL
+function telaLogin() {
     $("#page").load("pages/login.html");
 }
 
-function telaLogout() {                                 //TELA LOGOUT
+function telaLogout() {
     $("#page").load("pages/logout.html");
 }
 
-function telaDefault() {                                //TELA PADRAO
+function telaDefault() {
     $("#page").load("pages/default.html");
+}
+
+function displayMain() {
+    $("#content-display").load("pages/main.html");
+    $("#titulo").html("MAIN MEASUREMENTS");
+    closeMenu();
+}
+
+function displayUsers() {
+    $("#content-display").load("pages/users.html");
+    $("#titulo").html("USERS SETTINGS");
+    closeMenu();
 }
 
 // MENU FUNCTIONALITY
@@ -24,23 +36,11 @@ function closeMenu() {
     $(".blur").css("filter", "blur(0)");
 }
 
-// PAGES CALL
-function displayMain() {
-    $("#content-display").load("pages/main.html");
-    $("#titulo").html("MAIN MEASUREMENTS");
-    closeMenu();
-}
-
-function displayUsers() {
-    $("#content-display").load("pages/users.html");
-    $("#titulo").html("USERS SETTINGS");
-    closeMenu();
-}
-
-function openEdit(){
+//MODAL USER EDIT
+function openEdit() {
     $("#edit-modal").fadeIn();
 }
 
-function closeEdit(){
+function closeEdit() {
     $("#edit-modal").fadeOut();
 }

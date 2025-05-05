@@ -30,7 +30,8 @@ th {
 
 /* ----------------------- EDIT MODAL ------------------------- */
 
-.modal {  /* --- BACKGROUND --- */
+.modal {
+    /* --- BACKGROUND --- */
     display: none;
     position: fixed;
     z-index: 20000;
@@ -67,29 +68,29 @@ th {
     cursor: pointer;
 }
 
-.space-bt{
+.space-bt {
     align-items: start;
     justify-content: space-between;
 }
 
-.bi-person-fill-gear{
+.bi-person-fill-gear {
     font-size: 70px;
     margin-left: 40px;
 }
 
-.space-bt h5{
+.space-bt h5 {
     margin: 0;
     margin-bottom: -3px;
 }
 
-.space-ar{
+.space-ar {
     justify-content: space-around;
 }
 
-.space-ar input{
+.space-ar input {
     width: 100px;
 }
 
-.space-ar label{
+.space-ar label {
     font-size: 10px;
 }
