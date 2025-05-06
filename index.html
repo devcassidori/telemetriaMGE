@@ -22,7 +22,41 @@
     <footer>
         <h6>© 2025 Copyright: MGE Broadcast Communication | All Rights Reserved.</h6>
     </footer>
+    <!-- Edit Modal -->
+<div id="edit-modal" class="modal">
+    <div class="edit-content">
+        <div class="center space-bt">
+            <a id="close-edit" onclick="closeEdit()" href="#">&times;</a>
+            <i class="bi bi-person-fill-gear"></i>
+                <div>
+                    <h5>PROFILE:</h5>
+                    <select disabled>
+                        <option value="ADM">ADM</option>
+                        <option value="GUEST" selected><b>GUEST</b></option>
+                    </select>
+                </div>
+        </div>
+        <div>
+            <div class="center space-ar">
+                <label for="user">USERNAME:</label>
+                <input name="user" type="text">
+                <label for="new-pass">NEW PASSWORD:</label>
+                <input name="new-pass" type="password">    
+            </div>
+            <div class="center space-ar">
+                <label for="current-pass">CURRENT PASSWORD:</label>
+                <input name="current-pass" type="password">
+                <label for="conf-pass">CONFIRM PASSWORD:</label>
+                <input name="conf-pass" type="password">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Edit Modal -->
 </body>
 
 </html>
+
+
+
 <!-- POWERED BY LUCAS CASSIDORI -->
