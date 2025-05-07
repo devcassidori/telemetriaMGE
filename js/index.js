@@ -20,6 +20,7 @@ function displayMain() {
 function displayUsers() {
     $("#content-display").load("pages/users.html");
     $("#titulo").html("USERS SETTINGS");
+    $("#edit-user").load("pages/edit-user.html");
     closeMenu();
 }
 
@@ -38,9 +39,9 @@ function closeMenu() {
 
 //MODAL USER EDIT
 function openEdit() {
-    $("#edit-modal").fadeIn();
+    $(".modal-user").fadeIn();
 }
 
 function closeEdit() {
-    $("#edit-modal").fadeOut();
+    $(".modal-user").fadeOut();
 }

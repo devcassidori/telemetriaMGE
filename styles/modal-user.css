@@ -1,0 +1,67 @@
+.modal-user {
+    /* _____ BACKGROUND _____ */
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 20000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10000%;
+    overflow: auto;
+    background-color: var(--shadow);
+}
+
+.edit-content {
+    color: black;
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 200px;
+    padding: 15px;
+    padding-top: 5px;
+    border: 1px solid #888;
+    width: 350px;
+    border-radius: 10px;
+}
+
+#close-edit {
+    color: #aaaaaa;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#close-edit:hover,
+#close-edit:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.space-bt {
+    align-items: start;
+    justify-content: space-between;
+}
+
+.bi-person-fill-gear {
+    font-size: 70px;
+    margin-left: 40px;
+}
+
+.space-bt h5 {
+    margin: 0;
+    margin-bottom: -3px;
+}
+
+.space-ar {
+    justify-content: space-around;
+}
+
+.space-ar input {
+    width: 100px;
+}
+
+.space-ar label {
+    font-size: 10px;
+}
