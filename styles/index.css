@@ -4,8 +4,10 @@
     --white: #ffffff;
     --lightgray: #858585;
     --background: #353535;
+    /* --background: #a3a3a3; */
     --azulMGE: #007AFF;
     --frame: #454545;
+    /* --frame: #eeeeee; */
     --shadow: #00000070;
     --backroundTextPos: #D5FFCF;
     --textPos: #1B8800;
@@ -22,6 +24,7 @@ body {
     font-family: Arial;
     background-color: var(--background);
     color: var(--white);
+    /* color: #303030; */
     scale: 1;
     padding-top: 100px;
 }

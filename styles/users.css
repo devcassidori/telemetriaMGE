@@ -3,27 +3,6 @@ em {
     color: var(--lightgray);
 }
 
-.bi-pencil-square {
-    /*_________ Edit Icon _________ */
-    text-decoration: none;
-    color: var(--white);
-    transition: 0.3s;
-}
-
-.bi-pencil-square:hover {
-    color: var(--lightgray);
-}
-
-.bi-person-circle {
-    /* _________ User Icon _________ */
-    border: solid 2.5px var(--lightgray);
-    border-radius: 100%;
-}
-
-.adm-user {
-    border-color: var(--azulMGE);
-}
-
 th {
     text-align: start;
 }

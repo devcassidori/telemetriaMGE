@@ -1,23 +1,23 @@
 // PAGES CALL
-function telaLogin() {
+function login() {
     $("#page").load("pages/login.html");
 }
 
-function telaLogout() {
+function exit() {
     $("#page").load("pages/logout.html");
 }
 
-function telaDefault() {
+function padrao (){
     $("#page").load("pages/default.html");
 }
 
-function displayMain() {
+function main() {
     $("#content-display").load("pages/main.html");
     $("#titulo").html("MAIN MEASUREMENTS");
     closeMenu();
 }
 
-function displayUsers() {
+function user() {
     $("#content-display").load("pages/users.html");
     $("#titulo").html("USERS SETTINGS");
     $("#edit-user").load("pages/edit-user.html");

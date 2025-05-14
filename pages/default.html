@@ -1,5 +1,5 @@
 <script>
-    displayMain();
+    main();
 </script>
 <link rel="stylesheet" href="../styles/default.css">
 <div id="display-painel" class="center frame">
@@ -47,7 +47,7 @@
         <main id="principal-display" class="frame">
             <div id="titulo-display" class="center">
                 <a onclick="openMenu()" title="Menu" id="menu-icon" class="blur">
-                    <i class="bi bi-list"></i>
+                    <!-- <i class="bi bi-list"></i> -->                             <!-- ALTERAR TODAS TAGS <i> -->
                 </a>
                 <div>
                     <a title="Close Menu" href="#" onclick="closeMenu()" id="close-menu">
@@ -58,10 +58,10 @@
                     <div>
                         <!----------------------- MENU HERE ------------------------->
                         <div align="center" id="menu-content">
-                            <a onclick=" displayMain()" href="#">
+                            <a onclick=" main()" href="#">
                                 <h4>MAIN MEASUREMENTS</h4>
                             </a>
-                            <a onclick="displayUsers()" href="#">
+                            <a onclick="user()" href="#">
                                 <h4>USERS</h4>
                             </a>
                             <a href="#">
@@ -102,8 +102,8 @@
                         <hr>
                     </div>
                 </div>
-                <a title="Exit" onclick="telaLogout()" id="logout-icon" class="blur">
-                    <i class="bi bi-box-arrow-right"></i>
+                <a title="Exit" onclick="exit()" id="logout-icon" class="blur">
+                    <!-- <i class="bi bi-box-arrow-right"></i> -->
                 </a>
             </div>
             <div id="content-display" class="blur">
