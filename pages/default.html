@@ -46,8 +46,12 @@
         </header>
         <main id="principal-display" class="frame">
             <div id="titulo-display" class="center">
-                <a onclick="openMenu()" title="Menu" id="menu-icon" class="blur">
-                    <!-- <i class="bi bi-list"></i> -->                             <!-- ALTERAR TODAS TAGS <i> -->
+                <a onclick="openMenu()" title="Menu" class="blur">
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
                 </a>
                 <div>
                     <a title="Close Menu" href="#" onclick="closeMenu()" id="close-menu">
@@ -55,43 +59,9 @@
                     </a>
                 </div>
                 <div class="overlay-menu" id="menu-nav">
-                    <div>
+                    <div id="menu">
                         <!----------------------- MENU HERE ------------------------->
-                        <div align="center" id="menu-content">
-                            <a onclick=" main()" href="#">
-                                <h4>MAIN MEASUREMENTS</h4>
-                            </a>
-                            <a onclick="user()" href="#">
-                                <h4>USERS</h4>
-                            </a>
-                            <a href="#">
-                                <h4>ABC</h4>
-                            </a>
-                            <a href="#">
-                                <h4>ABC</h4>
-                            </a>
-                            <a href="#">
-                                <h4>ABC</h4>
-                            </a>
-                            <a href="#">
-                                <h4>ABC</h4>
-                            </a>
-                            <a href="#">
-                                <h4>ABC</h4>
-                            </a>
-                            <a href="#">
-                                <h4>ABC</h4>
-                            </a>
-                            <a href="#">
-                                <h4>ABC</h4>
-                            </a>
-                            <a href="#">
-                                <h4>ABC</h4>
-                            </a>
-                            <a href="#">
-                                <h4>ABC</h4>
-                            </a>
-                        </div>
+
                     </div>
                 </div>
                 <div>
@@ -102,8 +72,14 @@
                         <hr>
                     </div>
                 </div>
-                <a title="Exit" onclick="exit()" id="logout-icon" class="blur">
-                    <!-- <i class="bi bi-box-arrow-right"></i> -->
+                <a title="Exit" onclick="exit()" class="blur">
+                    <svg id="logout-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                        <path fill-rule="evenodd"
+                            d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                    </svg>
                 </a>
             </div>
             <div id="content-display" class="blur">
@@ -114,76 +90,7 @@
         </main>
     </div>
     <div id="painel" class="frame">
-        <div id="faults-content" class="frame painel-slot">
-            <div>
-                <h3 align="center">FAULTS</h3>
-            </div>
-            <div class="center slot-content">
-                <div align="center">
-                    <h4>PLL</h4>
-                    <figure><img src="../imgs/pll.svg" alt="PLL"></figure>
-                </div>
-                <div align="center">
-                    <h4>SWR</h4>
-                    <figure><img src="../imgs/swr.svg" alt="SWR"></figure>
-                </div>
-                <div align="center">
-                    <h4>TEMP</h4>
-                    <figure><img src="../imgs/temp.svg" alt="TEMP"></figure>
-                </div>
-                <div align="center">
-                    <h4>PA</h4>
-                    <figure><img src="../imgs/pa.svg" alt="PA"></figure>
-                </div>
-                <div align="center">
-                    <h4>AC</h4>
-                    <figure><img src="../imgs/ac.svg" alt="AC"></figure>
-                </div>
-                <div align="center">
-                    <h4>MUTE</h4>
-                    <figure><img src="../imgs/mute.svg" alt="MUTE"></figure>
-                </div>
-            </div>
-        </div>
-        <div id="power-carrier" class="center">
-            <div id="power-content" class="frame painel-slot">
-                <div align="center">
-                    <h3>POWER</h3>
-                </div>
-                <div>
-                    <div id="power-h4s" class="center slot-content">
-                        <h4>LOW</h4>
-                        <h4>MID</h4>
-                        <h4>HIGH</h4>
-                    </div>
-                    <div id="power-icons" class="center slot-content">
-                        <figure><img src="../imgs/low.svg" alt="low"></figure>
-                        <figure><img src="../imgs/mid.svg" alt="mid"></figure>
-                        <figure><img src="../imgs/high.svg" alt="high"></figure>
-                    </div>
-                </div>
-                <div class="center">
-                    <button class="btn-blue btn-painel"></button>
-                </div>
-            </div>
-            <div id="carrier-content" class="frame painel-slot">
-                <div align="center">
-                    <h3>CARRIER</h3>
-                </div>
-                <div class="center slot-content">
-                    <div align="center">
-                        <h4>OFF</h4>
-                        <figure><img src="../imgs/pw.svg" alt="power-icon"></figure>
-                        <button class="btn-blue btn-painel"></button>
-                    </div>
-                    <div align="center">
-                        <h4>ON</h4>
-                        <figure><img src="../imgs/mic.svg" alt="mic-icon"></figure>
-                        <button class="btn-green btn-painel"></button>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
-    
+
 </div>

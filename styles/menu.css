@@ -1,0 +1,48 @@
+#menu-nav {
+    margin-top: 255px;
+    margin-left: -15px;
+    width: 0;
+    position: absolute;
+    background-color: var(--shadow);
+    border-radius: 10px;
+    height: 305px;
+    z-index: 1000;
+    transition: all 0.5s;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#menu-nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu-content {
+    margin-top: 40px;
+}
+
+#menu-content a {
+    margin-top: 15px;
+    display: block;
+}
+
+#close-menu {
+    margin-top: -40px;
+    margin-left: -160px;
+    position: fixed;
+    cursor: pointer;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 2000;
+    visibility: hide;
+}
+
+#menu-content a:hover,
+#menu-content a:focus,
+#close-menu:hover,
+#close-menu:focus {
+    color: #aaaaaa;
+}

@@ -9,6 +9,7 @@ function exit() {
 
 function padrao (){
     $("#page").load("pages/default.html");
+    $("#painel").load("pages/painel.html");
 }
 
 function main() {
@@ -26,6 +27,7 @@ function user() {
 
 // MENU FUNCTIONALITY
 function openMenu() {
+    $("#menu").load("pages/menu.html");
     $("#menu-nav").css("width", "550px");
     $("#close-menu").fadeIn();
     $(".blur").css("filter", "blur(2px)");

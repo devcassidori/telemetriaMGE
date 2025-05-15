@@ -47,12 +47,9 @@ main {
     margin-top: -15px;
 }
 
-#menu-icon {
-    font-size: 25px;
-}
-
+#menu-icon ,
 #logout-icon {
-    font-size: 22px;
+    height: 20px;
 }
 
 #menu-icon,
@@ -91,54 +88,6 @@ hr {
 
 /*__________________ MENU STYLE __________________*/
 
-#menu-nav {
-    margin-top: 255px;
-    margin-left: -15px;
-    width: 0;
-    position: absolute;
-    background-color: var(--shadow);
-    border-radius: 10px;
-    height: 305px;
-    z-index: 1000;
-    transition: all 0.5s;
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-#menu-nav a {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#menu-content {
-    margin-top: 40px;
-}
-
-#menu-content a {
-    margin-top: 15px;
-    display: block;
-}
-
-#close-menu {
-    margin-top: -40px;
-    margin-left: -160px;
-    position: fixed;
-    cursor: pointer;
-    color: var(--white);
-    text-decoration: none;
-    font-weight: bold;
-    z-index: 2000;
-    visibility: hide;
-}
-
-#menu-content a:hover,
-#menu-content a:focus,
-#close-menu:hover,
-#close-menu:focus {
-    color: #aaaaaa;
-}
 
 
 /*_________________ TABLE STYLE _________________*/
@@ -174,54 +123,6 @@ th {
     text-align: end;
 }
 
-/*_________________ PAINEL STYLES _________________*/
 
-.painel-slot {
-    padding: 10px;
-    border: solid 3px var(--lightgray);
-}
-
-#painel h3 {
-    margin: 0;
-}
-
-.painel-slot h4 {
-    color: var(--lightgray);
-}
-
-.slot-content {
-    justify-content: space-around;
-}
-
-#faults-content {
-    margin-top: 18px;
-}
-
-#power-carrier {
-    margin: 20px auto 0;
-}
-
-#power-carrier .slot-content {
-    width: 235px;
-}
-
-#power-content {
-    margin-right: 20px;
-}
-
-#power-icons {
-    margin-left: 7px;
-    align-items: end;
-}
-
-#power-h4s {
-    align-items: start;
-}
-
-.btn-painel {
-    margin: 30px auto 10px;
-    width: 50px;
-    height: 40px;
-}
 
 
